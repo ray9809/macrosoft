@@ -10,7 +10,7 @@
 #' open_csv()
 
 open_csv <- function(filename, app = "SSMS", header = T) {
-  if(keyword == "SSMS") {
+  if(app == "SSMS") {
     return(
       as.data.frame(
         read.csv(
